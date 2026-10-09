@@ -1,4 +1,30 @@
 *{
-  background-color: rgb(189, 227, 227);
-  font-family: 'Times New Roman', Times, serif;
+ 
+    box-sizing: content-box;
+}
+body {
+   font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+    color: #000000;
+    max-width: 720px;
+    background-color: rgb(183, 211, 234);
+  
+    margin: 0px auto;
+    padding: 30px 20px;
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+
+}
+
+#logo{
+  width: 100px;
+  height: 100px;
+  margin: 0  auto;
+  border-radius: 50%;
+   object-fit:cover;
 }
