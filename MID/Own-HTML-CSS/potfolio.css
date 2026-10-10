@@ -7,7 +7,7 @@ body {
   font-size: 20px;
     color: #000000;
     max-width: 720px;
-    background-color: rgb(183, 211, 234);
+    background-color:aliceblue;
   
     margin: 0px auto;
     padding: 30px 20px;
@@ -15,8 +15,8 @@ body {
 
 h1{
   text-align: center;
-  color: rgb(0, 0, 0);
-  border-bottom: 3px solid black;
+  color: midnightblue;
+  border-bottom: 3px solid rgb(155, 118, 118);
   padding-bottom: 20px;
 
 }
@@ -24,7 +24,51 @@ h1{
 #logo{
   width: 100px;
   height: 100px;
-  margin: 0  auto;
+  margin-bottom: 15px;
   border-radius: 50%;
    object-fit:cover;
 }
+
+fieldset{
+  background-color:white;
+  font-weight: lighter;
+  padding: 20px 30px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+legend{
+  background-color: midnightblue;
+    color: white;
+  font-weight: bold;
+  padding: 20px 15px;
+  border-radius: 10%;
+
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td{
+  padding: 10px 10px;
+
+}
+
+#education{
+  text-align: center;
+  border: 1px solid steelblue;
+  
+}
+#personal{
+  border: 1px solid ;
+}
+
+#education th{
+  text-align: center;
+  border: 1px solid lightblue;
+}
+
+
+
