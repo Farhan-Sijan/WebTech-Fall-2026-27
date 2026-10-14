@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration From</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="https://www.aiub.edu"> Home</a> </li>
+        <li><a href="https:www.google.com">Google</a></li>
+        <li><a href="#department">departments</a></li>
+
+        <ul class="submenu">
+            <li><a href="#medicine"> Medicine</a></li>
+            <li><a href="#cardiac">cardiac</a></li>
+        </ul>
+    </ul>
+
+    <video src="AIUB Virtual Tour _ 2021.mp4" width="300px" type="video/mp4" controls></video>
+    <img src="Yolo21.png" height="100px">
+    
+    <h1>Pretient registration from</h1>
+    <form>
+        <fieldset>
+   <legend>Patient Peersonal Infromation</legend>
+         <table>
+            <tr>
+                <td><label for="PatientName">patient Name : </label></td>
+               <td><input type ="text" name="patientName" id="patientName"  placeholder="Enter your name "></td>
+            </tr>
+
+            <tr>
+                <td><label for="patientAge">Patient Age : </label></td>
+                <td><input type="number" name="patientAge" id="patentAge" placeholder="Enter your age :">  </td>
+            </tr>
+            <tr>
+                <td><label for ="patientEmail">Patient Email : </label></td>
+                <td><input type="email" name="patientEmail" id="patientEmail" placeholder="Write your Email : "</td>
+            </tr>
+
+            <tr>
+                <td><label for="PatientGender">Gender</label></td>
+                <td><input type="radio" name="gender" id="Male">Male
+                <input type="radio" name="gender" id="Female">female</td>
+
+            </tr>
+               <tr>
+                <td>
+                    <label for="paatientDoc">Patient History</label>
+                </td>
+                <td><input type="file" name="patientDoc" id="doc" > </td>
+
+               </tr>
+
+               <tr>
+                <td><label for="date">Date</label></td>
+                <td><input type="date" name="date" id="date"</td>
+               </tr>
+         <tr>
+            <td>
+                <label for="Address">Address</label>
+            </td>
+            <td><textarea id="address" style="resize: none;"></textarea>
+
+            </td>
+         </tr>
+
+         <tr>
+        <td><label for="citizen">Citizensship :</label></td>
+        <td>
+            <select>
+                <option id="blank"> select country</option>
+                <option id="bang">Bangladesh</option>
+                <option id="Ind">India</option>
+                <option id="Aus">Australia</option>
+            </select>
+        </td>
+         </tr>
+
+         <tr>
+            <td>
+                <label for="dept">Department</label>
+            </td>
+            <td><input type="checkbox" name="medicine" id="medicine">medicine
+            <input type="checkbox" name="cardiac" id="cardiac"> cardiac
+           <input type="checkbox" name="DeptNeoro" id="DeptNeoro"> DeptNeoro</td>
+         </tr>
+
+                
+         </table>   
+        </fieldset>
+
+        <br>
+
+        <h3>User Info</h3>
+        <fieldset>
+            <legend>User Info</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">UserName</label>
+                    </td>
+                    <td><input type="text" name="user" id="user"></td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="signUp" id="submit">
+        <input type="reset" id="reset" value="Reset">
+    </form>
+</body>
+</html>
