@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+       <link rel="stylesheet" href="../css/assigned-deliveries.css">
+
+       <script src="../JS/assigned-deliveries.js" defer></script>
+        <title>Assigned Deliveries</title>
+</head>
+<body>
+    <div class="container">
+      <div class="sidebar">
+
+        <h2>Courier Management</h2>
+        <h3>Rider Menu </h3>
+
+        <p>Assigned Deliveries</p>
+            <p>Delivery Details</p>
+            <p>Update Status</p>
+
+      </div>  
+       <div class="main-content">
+
+            <div class="header">
+                <h1>Assigned Deliveries</h1>
+                <p>Today's Pickup and Delivery Tasks</p>
+            
+            </div>
+
+            
+<div class="search-box">
+
+    <label for="searchParcel">Search Parcel:</label>
+
+    <input type="text" id="searchParcel"
+           placeholder="Enter Tracking ID">
+
+    <button type="button" id="searchBtn">Search</button>
+
+       <button type="button" id="resetBtn">Reset</button>
+
+    <p id="searchError"></p>
+
+</div>
+
+
+<div class="filter-box">
+
+    <label for="typeFilter">Filter By Type:</label>
+
+    <select id="typeFilter">
+        <option value="All">All Parcels</option>
+        <option value="Pickup">Pickup</option>
+        <option value="Delivery">Delivery</option>
+    </select>
+
+</div>
+
+
+<table class="parcel-table">
+    <tr>
+        <th>Tracking ID</th>
+        <th>Receiver Name</th>
+        <th>Type</th>
+        <th>Status</th>
+           <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>CR001</td>
+        <td>Rahim Ahmed</td>
+        <td>Pickup</td>
+        <td>Pending</td>
+         <td>
+        <button type="button" class="viewBtn">View Details</button>
+    </td>
+    </tr>
+
+    <tr>
+        <td>CR002</td>
+        <td>Karim Hasan</td>
+        <td>Delivery</td>
+        <td>In Progress</td>
+         <td>
+        <button type="button" class="viewBtn">View Details</button>
+    </td>
+    </tr>
+
+    <tr>
+        <td>CR003</td>
+        <td>Nusrat Jahan</td>
+        <td>Delivery</td>
+        <td>Delivered</td>
+         <td>
+        <button type="button" class="viewBtn">View Details</button>
+    </td>
+    </tr>
+</table>
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
