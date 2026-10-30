@@ -30,6 +30,19 @@ if(filter)
         filterParcels();
     });
 }
+
+
+let buttons = document.querySelectorAll(".viewBtn");
+
+for(let i = 0; i < buttons.length; i++)
+{
+    buttons[i].addEventListener("click", function()
+    {
+        let id = buttons[i].value;
+
+        openDetails(id);
+    });
+}
 });
 
 
@@ -141,4 +154,9 @@ function filterParcels()
 
     document.getElementById("searchParcel").value = "";
     document.getElementById("searchError").innerHTML = "";
+}
+
+function openDetails(id)
+{
+    window.location.href = "delivery-details.html?id=" + id;
 }
