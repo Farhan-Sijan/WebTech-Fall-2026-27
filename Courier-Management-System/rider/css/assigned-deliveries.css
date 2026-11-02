@@ -9,7 +9,6 @@ body {
     background-color: #fcfeff;
 }
 
-
 .container {
     display: flex;
     min-height: 1000px;
@@ -22,7 +21,6 @@ body {
     color: white;
     padding: 20px;
 }
-
 
 .main-content {
     flex: 1;
@@ -69,37 +67,6 @@ body {
     border: 1px solid #1d135e;
     padding: 10px;
     text-align: center;
-}
-.search-box {
-    margin-top: 20px;
-}
-
-#searchParcel {
-    width: 200px;
-    padding: 8px;
-}
-
-#searchBtn {
-    padding: 8px 15px;
-    background-color: #17324d;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#searchError {
-    font-weight: bold;
-    text-align: center;
-    color: #d62828;
-    font-size: 16px;
-}
-
-#resetBtn {
-    padding: 8px 15px;
-    background-color: #777777;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
 
 .filter-box {

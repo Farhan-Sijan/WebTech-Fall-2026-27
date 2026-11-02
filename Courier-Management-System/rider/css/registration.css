@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin :0;
+    font-family: 'Times New Roman', Times, serif;
+   background-color: #eaf1f7;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding :20px;
+    background-color: white;
+}
+
+h1{
+    color : #17324d;
+}
+
+fieldset{
+    border :1px solid #17324d;
+    border-radius: 6px;
+    padding: 20px;
+     background-color: #f4f8fc;
+}
+
+legend{
+    color: #17324d;
+    font-weight: bold;
+}
+
+table td{
+    padding:8px ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"]
+{
+    padding: 8px;
+    width: 330px;
+}
+
+
+#submit,
+#reset{
+    padding: 8px 20px;
+    background-color: #17324d;
+    color: white;
+    border:none;
+      cursor: pointer;
+
+}
+
+
+#submit:hover,
+#reset:hover{
+    
+    background-color:  #315779;
+   
+
+}
+
+.footer{
+    text-align: center;
+   
+}
+
+#link{
+    text-decoration: none;
+     color: #17324d;
+}
+
+td p {
+    color: #c62828;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}

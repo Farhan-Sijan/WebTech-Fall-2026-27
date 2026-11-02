@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registration.css">
+    <script src="../JS/registration.js" defer></script>
+    <title>Rider Registration</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Rider Registration</h1>
+        <p>Create Your Rider Account</p>
+
+        <form id="regiForm">
+
+            <fieldset>
+                <legend>Rider Information</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label for="riderName">Full Name:</label></td>
+                        <td><input type="text" id="riderName">
+                          <p id="NameError"> </p> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="riderEmail">Email:</label></td>
+                        <td><input type="email" id="riderEmail">
+                        <p id="EmailError"> </p> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="riderPhone">Phone Number:</label></td>
+                        <td><input type="tel" id="riderPhone">
+                         <p id="PhoneError"> </p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender :</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                             <p id="GenderError"> </p> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob">
+                         <p id="DobError"> </p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Available Working Shifts:</td>
+                        <td>
+                            <input type="checkbox" id="morning" name="shift" value="Morning">
+                            <label for="morning">Morning</label>
+                            <br>
+
+                            <input type="checkbox" id="afternoon" name="shift" value="Afternoon">
+                            <label for="afternoon">Afternoon</label>
+                            <br>
+
+                            <input type="checkbox" id="evening" name="shift" value="Evening">
+                            <label for="evening">Evening</label>
+                             <p id="ShiftError"> </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="riderPassword">Password:</label></td>
+                        <td><input type="password" id="riderPassword">
+                         <p id="PasswordError"> </p></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="confirmPassword">Confirm Password:</label></td>
+                        <td><input type="password" id="confirmPassword">
+                         <p id="ConfirmError"> </p> </td>
+                    </tr>
+
+                </table>
+
+                <br>
+
+                <input type="submit" id="submit" value="Signup">
+                <input type="reset" id="reset" value="Reset">
+
+            </fieldset>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a id="link" href="rider-login.html">Login Here</a>
+        </p>
+
+    </div>
+              <div class="footer">
+        <h5>Created By Farhan Hasin Sijan</h5>
+    </div>
+</body>
+</html>
