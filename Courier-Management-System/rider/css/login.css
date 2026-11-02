@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eaf1f7;
+}
+
+.container{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+
+}
+h1{
+    color:#17324d;
+}
+
+fieldset{
+    border: 1px solid #17324d;
+    border-radius: 6px;
+    padding: 20px;
+    background-color:#f4f8fc ;
+}
+legend{
+    color: #17324d;
+    font-weight: bold;
+}
+
+table td{
+    padding: 8px;
+     vertical-align: top;
+    
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    width: 250px;
+}
+
+#submit,
+#reset {
+    padding: 8px 20px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover,
+#reset:hover {
+    background-color: #315779;
+}
+
+.container a {
+    text-decoration: none;
+    color: #17324d;
+}
+.footer {
+    text-align: center;
+}
