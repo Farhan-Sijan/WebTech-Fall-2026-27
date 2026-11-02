@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/update-status.css">
+<script src="../JS/update-status.js" defer></script>
+    <title>Update Status</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h2>Courier Management</h2>
+            <h3>Rider Menu</h3>
+
+            <p>
+                <a href="dashboard.html">Dashboard</a>
+            </p>
+
+            <p>
+                <a href="assigned-deliveries.html">Assigned Deliveries</a>
+            </p>
+<p>
+                <a href="delivery-details.html">Delivery Details</a>
+            </p>
+            <p>Update Status</p>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="header">
+                <h1>Update Status</h1>
+                <p>Update Your Assigned Parcel Status</p>
+            </div>
+
+            <div class="status-box">
+
+                <form id="statusForm">
+
+                    <fieldset>
+                        <legend>Parcel Status Information</legend>
+
+                        <table>
+
+                            <tr>
+                                <td>
+                                    <label for="trackingId">Tracking ID:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="trackingId">
+                                    <p id="TrackingError"></p> </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="newStatus">New Status:</label>
+                                </td>
+                                <td>
+                                    <select id="newStatus">
+                                        <option value="">Select Status</option>
+                                        <option value="Pending">Pending</option>
+                                        <option value="In Progress">In Progress</option>
+                                        <option value="Delivered">Delivered</option>
+                                    </select>
+                                    <p id="StatusError"></p> </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="otp">Delivery OTP:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="otp">
+                                    <p id="OtpError"></p> </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="proof">Proof Photo / Signature:</label>
+                                </td>
+                                <td>
+                                    <input type="file" id="proof" accept="image/*">
+                                    <p id="ProofError"></p> </td>
+                            </tr>
+
+                        </table>
+
+                        <br>
+
+                        <input type="submit" id="submit" value="Update Status">
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

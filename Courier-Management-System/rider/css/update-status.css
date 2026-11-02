@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fcfeff;
+}
+
+.container {
+    display: flex;
+    min-height: 1000px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #17324d;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.sidebar h3 {
+    font-size: 14px;
+    color: #bfd0e0;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #244361;
+    border-radius: 6px;
+}
+
+.sidebar p:hover {
+    background-color: #315779;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.status-box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 1px solid #17324d;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #f4f8fc;
+}
+
+legend {
+    color: #17324d;
+    font-weight: bold;
+}
+
+table td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    width: 240px;
+}
+
+#submit {
+    padding: 8px 20px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #315779;
+}
+
+td p {
+    color: #c62828;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        display: block;
+        min-height: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
