@@ -1,73 +1,46 @@
+
 document.addEventListener("DOMContentLoaded", function()
 {
-    showParcelId();
+    showParcelInfo();
 });
 
-function showParcelId()
+function showParcelInfo()
 {
-    let url = new URLSearchParams(window.location.search);
-
-    let id = url.get("id");
-
-    if(id == null)
-    {
-        document.getElementById("parcelId").innerHTML = "No Parcel Selected";
-        return false;
-    }
-    else
-    {
-          document.getElementById("parcelId").innerHTML = id;
-
-    showParcelInfo(id);
-
-    return true;
-    }
-}
-
-
-function showParcelInfo(id)
-{
-    let name = "";
-    let type = "";
-    let status = "";
-    let phone = "";
-let address = "";
+      let url = new URLSearchParams(window.location.search);
+     let id = url.get("id");
 
     if(id == "CR001")
     {
-        name = "Rahim Ahmed";
-        type = "Pickup";
-        status = "Pending";
-         phone = "013134354323";
-    address = "Satmatha, Bogura";
+        document.getElementById("parcelId").innerHTML = id;
+           document.getElementById("receiverName").innerHTML = "Rahim Ahmed";
+          document.getElementById("parcelType").innerHTML = "Pickup";
+           document.getElementById("parcelStatus").innerHTML = "Pending";
+             document.getElementById("receiverPhone").innerHTML = "013134354323";
+        document.getElementById("deliveryAddress").innerHTML = "Satmatha, Bogura";
     }
     else if(id == "CR002")
     {
-        name = "Karim Hasan";
-        type = "Delivery";
-        status = "In Progress";
-         phone = "017545645645";
-    address = "Thanthania, Bogura";
+          document.getElementById("parcelId").innerHTML = id;
+          document.getElementById("receiverName").innerHTML = "Karim Hasan";
+        document.getElementById("parcelType").innerHTML = "Delivery";
+          document.getElementById("parcelStatus").innerHTML = "In Progress";
+          document.getElementById("receiverPhone").innerHTML = "017545645645";
+        document.getElementById("deliveryAddress").innerHTML = "Thanthania, Bogura";
     }
     else if(id == "CR003")
     {
-        name = "Nusrat Jahan";
-        type = "Delivery";
-        status = "Delivered";
-         phone = "0121435456";
-    address = "Jaleshwaritola, Bogura";
+          document.getElementById("parcelId").innerHTML = id;
+        document.getElementById("receiverName").innerHTML = "Nusrat Jahan";
+           document.getElementById("parcelType").innerHTML = "Delivery";
+           document.getElementById("parcelStatus").innerHTML = "Delivered";
+        document.getElementById("receiverPhone").innerHTML = "0121435456";
+          document.getElementById("deliveryAddress").innerHTML = "Jaleshwaritola, Bogura";
     }
     else
     {
-        document.getElementById("receiverName").innerHTML = "Parcel Not Found";
+          document.getElementById("parcelId").innerHTML = "Parcel Not Found";
         return false;
     }
 
-    document.getElementById("receiverName").innerHTML = name;
-    document.getElementById("parcelType").innerHTML = type;
-    document.getElementById("parcelStatus").innerHTML = status;
-document.getElementById("receiverPhone").innerHTML = phone;
-
-document.getElementById("deliveryAddress").innerHTML = address;
     return true;
 }

@@ -36,18 +36,18 @@ function collect_data()
 
     return validName  && validEmail  &&  validPhone &&
               validGender  &&  validDob && validShift &&
-           validPassword &&  validConfirm;
+            validPassword &&  validConfirm;
 }
 
 function validateName()
 {
-    let name =document.getElementById("riderName").value.trim();
+     let name =document.getElementById("riderName").value.trim();
     let error=document.getElementById("NameError");
 
     if(name=="")
     {
-        error.innerHTML="Please Enter your Name : ";
-        return false;
+          error.innerHTML="Please Enter your Name : ";
+         return false;
     }
     else if(name.length<6)
     {

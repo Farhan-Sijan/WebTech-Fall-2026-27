@@ -55,17 +55,18 @@ body {
     border-radius: 10px;
 }
 
-.details-box {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
+.details-box table {
+   
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.details-box p {
-    margin-bottom: 15px;
+
+.details-box td {
+    padding: 10px;
+    text-align: left;
 }
+
 .sidebar a {
     display: block;
     padding: 10px;
