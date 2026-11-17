@@ -86,23 +86,6 @@ body {
     cursor: pointer;
 }
 
-
-@media (max-width: 768px) {
-
-    .container {
-        display: block;
-        min-height: 0;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .main-content {
-        padding: 15px;
-    }
-
-}
 .sidebar a {
     color: white;
     text-decoration: none;
