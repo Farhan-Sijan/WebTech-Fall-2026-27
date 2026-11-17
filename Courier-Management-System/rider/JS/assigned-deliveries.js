@@ -41,12 +41,12 @@ function filterParcels()
         if(type == "All" || type == parcelType)
         {
             rows[i].style.display = "table-row";
-            return true;
+        
         }
         else
         {
             rows[i].style.display = "none";
-             return false;
+          
         }
     }
 }

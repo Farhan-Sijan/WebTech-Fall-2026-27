@@ -1,7 +1,4 @@
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -61,16 +58,8 @@ body {
     border-radius: 10px;
 }
 
-.status-box {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
-}
-
 fieldset {
-    border: 1px solid #17324d;
+    border: 2px solid #17324d;
     border-radius: 6px;
     padding: 20px;
     background-color: #f4f8fc;
