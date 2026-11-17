@@ -3,55 +3,55 @@
 }
 
 body{
-    margin :0;
-    font-family: 'Times New Roman', Times, serif;
-   background-color: #eaf1f7;
+     margin :0;
+     font-family: 'Times New Roman', Times, serif;
+    background-color: #eaf1f7;
 }
 
 .container {
     max-width: 720px;
-    margin: 0 auto;
-    padding :20px;
+      margin: 0 auto;
+     padding :20px;
     background-color: white;
 }
 
 h1{
-    color : #17324d;
+     color : #17324d;
 }
 
 fieldset{
-    border :1px solid #17324d;
-    border-radius: 6px;
-    padding: 20px;
-     background-color: #f4f8fc;
+     border :1px solid #17324d;
+      border-radius: 6px;
+     padding: 20px;
+       background-color: #f4f8fc;
 }
 
 legend{
-    color: #17324d;
+       color: #17324d;
     font-weight: bold;
 }
 
 table td{
-    padding:8px ;
+     padding:8px ;
      vertical-align: top;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="password"]
+input [ type="text"],
+input [type="email" ],
+input [type="tel"],
+input [type="date"],
+input [type="password"]
 {
     padding: 8px;
-    width: 330px;
+      width: 330px;
 }
 
 
 #submit,
 #reset{
     padding: 8px 20px;
-    background-color: #17324d;
-    color: white;
+     background-color: #17324d;
+      color: white;
     border:none;
       cursor: pointer;
 
@@ -72,16 +72,20 @@ input[type="password"]
 }
 
 #link{
+   
     text-decoration: none;
-     color: #67585d;
+    
+      color: #67585d;
 }
 #link:hover{
-   background-color: rgb(167, 174, 149);
+   
+    background-color: rgb(167, 174, 149);
 }
 
 td p {
+   
     color: #c62828;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 5px 0;
+     font-size: 14px;
+      font-weight: bold;
+      margin: 5px 0;
 }

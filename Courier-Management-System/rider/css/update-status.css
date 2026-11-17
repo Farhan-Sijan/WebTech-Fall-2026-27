@@ -111,18 +111,4 @@ td p {
     margin: 5px 0;
 }
 
-@media (max-width: 768px) {
 
-    .container {
-        display: block;
-        min-height: 0;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .main-content {
-        padding: 15px;
-    }
-}

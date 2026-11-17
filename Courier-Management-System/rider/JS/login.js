@@ -1,25 +1,23 @@
 
+
 document.addEventListener("DOMContentLoaded", function()
 {
-    const form = document.querySelector("form");
+    const form = document.getElementById("LoginForm");
 
     if(form)
     {
         form.addEventListener("submit", function(event)
         {
-           
+            event.preventDefault();
 
             if(collect_data() == true)
             {
-                alert("Login Form Validation Successful!");
-            }
-
-            else{
-                event.preventDefault();
+                window.location.href = "dashboard.html";
             }
         });
     }
 });
+
 
 
 function collect_data()

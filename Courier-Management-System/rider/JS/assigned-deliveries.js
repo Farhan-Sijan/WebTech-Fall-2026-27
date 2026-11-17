@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function()
 });
 
 
+
 function filterParcels()
 {
     let type = document.getElementById("typeFilter").value;
@@ -33,18 +34,23 @@ function filterParcels()
 
     for(let i = 1; i < rows.length; i++)
     {
-        let parcelType = rows[i].getElementsByTagName("td")[2].innerHTML;
+        let parcel = rows[i].querySelector(".parcelType");
+
+        let parcelType = parcel.innerHTML;
 
         if(type == "All" || type == parcelType)
         {
             rows[i].style.display = "table-row";
+            return true;
         }
         else
         {
             rows[i].style.display = "none";
+             return false;
         }
     }
 }
+
 
 
 function openDetails(id)

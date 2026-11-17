@@ -25,6 +25,7 @@ function collect_data()
        let validEmail=  validateEmail();
 
      let validPhone=validatePhone();
+
          let validGender= validateGender();
 
       let validDob =validateDob();
@@ -140,7 +141,17 @@ function validateDob()
 
     if(dob == "")
     {
-        Error.innerHTML = "Please Select Date of Birth";
+        Error.innerHTML = "Please Enter Date of Birth";
+        return false;
+    }
+
+    let birthDate = new Date(dob);
+    let today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+ if(age < 18 || age > 35)
+    {
+        Error.innerHTML = "Age Must Be Between 18 and 35";
         return false;
     }
     else
@@ -150,11 +161,15 @@ function validateDob()
     }
 }
 
+
 function  validateShift()
 {
      let shifts = document.querySelectorAll('input[name="shift"]');
+
     let ShiftError = document.getElementById("ShiftError");
+
     let selectedShifts = [];
+
 for(let i = 0; i < shifts.length; i++)
     {
         if(shifts[i].checked)
@@ -166,11 +181,13 @@ for(let i = 0; i < shifts.length; i++)
     if(selectedShifts.length == 0)
     {
         ShiftError.innerHTML = "Please Select at least One Shift";
+
         return false;
     }
     else
     {
         ShiftError.innerHTML = "";
+
         return true;
     }
 
@@ -180,21 +197,26 @@ for(let i = 0; i < shifts.length; i++)
 function validatePassword()
 {
     let password = document.getElementById("riderPassword").value;
-    let Error = document.getElementById("PasswordError");
+
+       let Error = document.getElementById("PasswordError");
 
     if(password == "")
     {
-        Error.innerHTML = "Please Enter Password";
-        return false;
+          Error.innerHTML = "Please Enter Password";
+       
+          return false;
     }
-    else if(password.length < 6)
+      else if(password.length < 6)
     {
-        Error.innerHTML = "Password Must be at least 6 Characters";
-        return false;
+          Error.innerHTML = "Password Must be at least 6 Characters";
+       
+          return false;
     }
     else
     {
+       
         Error.innerHTML = "";
+        
         return true;
     }
 }
@@ -202,9 +224,12 @@ function validatePassword()
 
 function validateConfirmPassword()
 {
+    
     let password = document.getElementById("riderPassword").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-    let Error = document.getElementById("ConfirmError");
+   
+     let confirmPassword = document.getElementById("confirmPassword").value;
+   
+       let Error = document.getElementById("ConfirmError");
 
     if(confirmPassword == "")
     {
