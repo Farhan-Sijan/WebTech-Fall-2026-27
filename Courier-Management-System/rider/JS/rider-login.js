@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function()
 
             if(collect_data() == true)
             {
-                window.location.href = "dashboard.html";
+                window.location.href = "rider-dashboard.html";
             }
         });
     }

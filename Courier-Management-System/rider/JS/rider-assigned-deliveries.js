@@ -5,19 +5,19 @@ document.addEventListener("DOMContentLoaded", function()
 
     if(filter)
     {
-        filter.addEventListener("change", function()
+        filter.addEventListener("change",function()
         {
             filterParcels();
         });
     }
 
-    let buttons = document.querySelectorAll(".viewBtn");
+    let buttons =document.querySelectorAll(".viewBtn");
 
-    for(let i = 0; i < buttons.length; i++)
+    for(let i=0;i<buttons.length; i++)
     {
-        buttons[i].addEventListener("click", function()
+        buttons[i].addEventListener("click",function()
         {
-            let id = buttons[i].value;
+            let id =buttons[i].value;
 
             openDetails(id);
         });
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function()
 
 function filterParcels()
 {
-    let type = document.getElementById("typeFilter").value;
+    let type=document.getElementById("typeFilter").value;
 
-    let rows = document.querySelectorAll(".parcel-table tr");
+    let rows =document.querySelectorAll(".parcel-table tr");
 
-    for(let i = 1; i < rows.length; i++)
+    for(let i = 1;i<rows.length; i++)
     {
         let parcel = rows[i].querySelector(".parcelType");
 
@@ -55,5 +55,5 @@ function filterParcels()
 
 function openDetails(id)
 {
-    window.location.href = "delivery-details.html?id=" + id;
+    window.location.href = "rider-delivery-details.html?id=" + id;
 }
